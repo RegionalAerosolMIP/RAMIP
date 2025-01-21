@@ -1,12 +1,12 @@
-name: Post-Processing Issue
-description: The formatting of the dataset is inconvient or incompatible with other datasets, but the underlying variable data is unaffected.
-title: "[Post-Processing Issue]: "
-labels: ["post-processing"]
+name: Coordinate Issue
+description: The coordinates for a dataset are incompatible with other datasets, improperly formatted, or corrupted, but the underlying variable data is unaffected.
+title: "[Coordinate Issue]: (INSERT TITLE HERE)"
+labels: ["coordinate"]
 body:
   - type: markdown
     attributes:
       value: |
-        The formatting of the dataset is inconvient or incompatible with other datasets, but the underlying variable data is unaffected.
+        The coordinate variables for a dataset are incompatible with other datasets, improperly formatted, or corrupted, but the underlying variable data is unaffected.
   - type: textarea
     id: summary
     attributes:
@@ -22,15 +22,14 @@ body:
       multiple: true
       description: Which models were impacted?
       options:
-        - All models
-        - UKESM
-        - NorESM2
-        - GISS
-        - CESM2
-        - MIROC-SPRINTARS
-        - EC-Earth3
-        - CanESM5
-        - MRI-ESM2
+        - Model-UKESM
+        - Model-NorESM2
+        - Model-GISS
+        - Model-CESM2
+        - Model-MIROC-SPRINTARS
+        - Model-EC-Earth3
+        - Model-CanESM5
+        - Model-MRI-ESM2
     validations:
       required: true
   - type: dropdown

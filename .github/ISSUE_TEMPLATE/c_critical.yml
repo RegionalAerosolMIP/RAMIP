@@ -1,12 +1,12 @@
-name: Coordinate Issue
-description: The coordinate variables for a dataset are incompatible with other datasets, improperly formatted, or corrupted, but the underlying variable data is unaffected.
-title: "[Coordinate Issue]: "
-labels: ["coordinate"]
+name: Critical Issue
+description: The underlying values of the dataset are biased, corrupted, or demonstrably incorrect.
+title: "[Critical Issue]: (INSERT TITLE HERE)"
+labels: ["critical"]
 body:
   - type: markdown
     attributes:
       value: |
-        The coordinate variables for a dataset are incompatible with other datasets, improperly formatted, or corrupted, but the underlying variable data is unaffected.
+        The underlying values of the dataset are biased, corrupted, or demonstrably incorrect.
   - type: textarea
     id: summary
     attributes:
@@ -22,24 +22,14 @@ body:
       multiple: true
       description: Which models were impacted?
       options:
-        - label: "All models"
-		  value: "All models"
-        - label: "UKESM"
-		  value: "UKESM"
-        - label: "NorESM2"
-		  value: "NorESM2"
-        - label: "GISS"
-		  value: "GISS"
-        - label: "CESM2"
-		  value: "CESM2"
-        - label: "MIROC-SPRINTARS"
-		  value: "MIROC-SPRINTARS"
-        - label: "EC-Earth3"
-		  value: "EC-Earth3"
-        - label: "CanESM5"
-		  value: "CanESM5"
-        - label: "MRI-ESM2"
-		  value: "MRI-ESM2"
+        - Model-UKESM
+        - Model-NorESM2
+        - Model-GISS
+        - Model-CESM2
+        - Model-MIROC-SPRINTARS
+        - Model-EC-Earth3
+        - Model-CanESM5
+        - Model-MRI-ESM2
     validations:
       required: true
   - type: dropdown

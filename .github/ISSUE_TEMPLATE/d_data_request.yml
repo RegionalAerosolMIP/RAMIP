@@ -1,18 +1,17 @@
-name: Critical Issue
-description: The underlying values of the dataset are biased, corrupted, or demonstrably incorrect.
-title: "[Critical Issue]: "
-labels: ["critical"]
+name: Data Request
+description: Request data if it is missing or difficult to obtain.
+title: "[Data Availability]: (INSERT TITLE HERE)"
+labels: ["data-availability"]
 body:
   - type: markdown
     attributes:
       value: |
-        The underlying values of the dataset are biased, corrupted, or demonstrably incorrect.
+        Request data if it is missing or difficult to obtain.
   - type: textarea
     id: summary
     attributes:
       label: Summary
       description: In a few sentences, describe the issue.
-      placeholder: ... post processing issue ...
     validations:
       required: true
   - type: dropdown
@@ -68,23 +67,3 @@ body:
       description: Please indicate which ensemble members were impacted.
     validations:
       required: true
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output.
-      render: shell
-    validations:
-      required: true
-  - type: textarea
-    id: commentary
-    attributes:
-      label: Details
-      description: Please describe the issue in detail including how to reproduce it.
-    validations:
-      required: true
-  - type: textarea
-    id: solution
-    attributes:
-      label: Solution (if you already have one)
-      description: If you have a solution for this issue, please describe it hear. If not, no worries! The community will work towards developing one.
